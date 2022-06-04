@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block notes %}
+<h1>Topics</h1>
+  {% for topic in topics %}
+    <li><a href="{% url 'notes:entries' topic.id %}">{{ topic.topic_theme }}</a></li>
+  {% endfor %}
+{% endblock notes %}

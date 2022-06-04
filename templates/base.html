@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+</head>
+<body>
+<p>
+    <a href="{% url 'notes:home-page' %}">Notes</a>
+    <a href="{% url 'notes:topics' %}">Topics</a>
+</p>
+    {% block notes %}
+    {% endblock notes %}
+</body>
+</html>
